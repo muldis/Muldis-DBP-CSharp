@@ -1,12 +1,12 @@
 # NAME
 
 Muldis::DBP -
-Formal spec of an abstract database protocol for C#/.Net
+Formal spec of an abstract database protocol for .Net
 
 # DESCRIPTION
 
 This distribution features the pure documentation file named
-Muldis::DBP (Formal spec of an abstract database protocol for C#/.Net)
+Muldis::DBP (Formal spec of an abstract database protocol for .Net)
 and its support structure.
 
 # AUTHOR

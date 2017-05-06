@@ -5,11 +5,11 @@
 =head1 NAME
 
 Muldis.DBP.API -
-Virtual Database Management System for C#/.Net
+Virtual Database Management System for .Net
 
 =head1 VERSION
 
-This document is Muldis.DBP.API version 0.1.0.-9 for C#/.Net.
+This document is Muldis.DBP.API version 0.1.0.-9 for .Net.
 
 =head1 SYNOPSIS
 
@@ -18,16 +18,16 @@ I<This documentation is pending.>
 =head1 DESCRIPTION
 
 Muldis.DBP.API is the virtual reference implementation of the B<Muldis
-DBP> (B<MDBP>) library API for C#/.Net, authority C<http://muldis.com>,
+DBP> (B<MDBP>) library API for .Net, authority C<http://muldis.com>,
 version number C<0.1.0.-9>.  It is also the main part of the human readable
 authoritative formal specification of the B<MDBP> library API itself.
 
 This document intentionally takes the form of API documentation for a
-concrete C#/.Net library named C<Muldis.DBP.API>; however,
-no C#/.Net library with that name actually exists, and it never should
+concrete .Net library named C<Muldis.DBP.API>; however,
+no .Net library with that name actually exists, and it never should
 exist; thus C<Muldis.DBP.API> is a I<virtual> library.
 
-An actual concrete C#/.Net library that implements and is fully conformant
+An actual concrete .Net library that implements and is fully conformant
 to the B<Muldis DBP> specification is one that provides an
 API that is a (possibly non-proper) superset of the API of the virtual
 library defined here.  And so, any applications or other libraries
@@ -88,7 +88,7 @@ A I<procedure> is a set of instructions for either enacting possibly
 non-deterministic change over time in a set of variables or for reading
 from or writing to the external environment of the application, including
 its users or various external systems.  Any typical interaction with a DBMS
-by a C#/.Net application would be mediated by at least one I<procedure>.
+by a .Net application would be mediated by at least one I<procedure>.
 
 =head2 type
 
@@ -573,7 +573,7 @@ Darren Duncan (C<darren@DarrenDuncan.net>)
 =head1 LICENSE AND COPYRIGHT
 
 This file is part of the formal specification of the the B<Muldis DBP>
-(B<MDBP>) library API for C#/.Net.
+(B<MDBP>) library API for .Net.
 
 MDBP is Copyright © 2015-2017, Muldis Data Systems, Inc.
 

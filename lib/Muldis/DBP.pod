@@ -5,11 +5,11 @@
 =head1 NAME
 
 Muldis.DBP -
-Formal spec of an abstract database protocol for C#/.Net
+Formal spec of an abstract database protocol for .Net
 
 =head1 VERSION
 
-This document is Muldis.DBP version 0.1.0.-9 for C#/.Net.
+This document is Muldis.DBP version 0.1.0.-9 for .Net.
 
 =head1 SYNOPSIS
 
@@ -18,19 +18,19 @@ I<This documentation is pending.>
 =head1 DESCRIPTION
 
 This document is the human readable authoritative formal specification of
-the B<Muldis DBP> (B<MDBP>) library API for C#/.Net.
+the B<Muldis DBP> (B<MDBP>) library API for .Net.
 
 The fully-qualified name of this document and the library API specification
-it contains is C<Muldis_DBP_CSharp 'http://muldis.com' '0.1.0.-9'>.  It is
+it contains is C<Muldis_DBP_DotNet 'http://muldis.com' '0.1.0.-9'>.  It is
 the official/original (not embraced and extended) Muldis DBP library API
 specification by the authority Muldis Data Systems (C<http://muldis.com>),
 version number C<0.1.0.-9> (this number matches the VERSION in this file).
 
-The Muldis DBP specification for C#/.Net is expressly designed
+The Muldis DBP specification for .Net is expressly designed
 to be compatible with the B<Muldis D> language specification (see
 L<Muldis::D>), version C<Muldis_D 'http://muldis.com' '0.201.0.-9'> in
 particular; however the two are also mutually independent by design.
-Iff C#/.Net libraries that implement the MDBP choose to explicitly support
+Iff .Net libraries that implement the MDBP choose to explicitly support
 using the Muldis D language with it, then certain parts of the MDBP
 specification would apply to them, and otherwise not.
 
@@ -41,7 +41,7 @@ I<This documentation is pending.>
 I<This documentation is pending.>
 
 I<TODO: The API details would be described partly in terms of a fake
-example C#/.Net library implementing it, where ...>
+example .Net library implementing it, where ...>
 
 I<Conforming to this API doesn't preclude the implementer from providing
 additional classes and routines, it just requires that a specific subset
@@ -60,7 +60,7 @@ specification of the B<Muldis D> language and its intended operating
 environment, which the Muldis.DBP API specification is
 co-developed with and designed to be compatible with.
 
-These existing or prospective C#/.Net libraries implement at least 1 version
+These existing or prospective .Net libraries implement at least 1 version
 of the B<Muldis DBP> API: C<Muldis.D.Ref_Eng>, and so on.
 
 =head1 AUTHOR
@@ -70,7 +70,7 @@ Darren Duncan (C<darren@DarrenDuncan.net>)
 =head1 LICENSE AND COPYRIGHT
 
 This file is part of the formal specification of the the B<Muldis DBP>
-(B<MDBP>) library API for C#/.Net.
+(B<MDBP>) library API for .Net.
 
 MDBP is Copyright © 2015-2017, Muldis Data Systems, Inc.
 
