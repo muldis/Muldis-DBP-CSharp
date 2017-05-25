@@ -350,14 +350,38 @@ I<TODO.>
 
 =head2 Handle
 
-I<TODO.>
+A C<Handle> value is an opaque and transient reference to an entity or
+resource that potentially exists at arms length from the current in-DBMS
+process or DBMS environment or that otherwise has the potential to mutate
+in a way visible to the current process either due to or independent of the
+actions of said process.  C<Handle> has multiple specialized subtypes
+including: C<Variable>, C<Process>, C<Stream>, C<External>.
 
 =head2 Variable
 
-I<TODO.>
+A C<Variable> value is an opaque and transient reference to an in-DBMS
+I<variable> (the latter being a container for an appearance of a value).
+A .Net application would use a C<Variable> as the means to return
+information from a database to the main application, by using a C<Variable>
+as an argument to an in-DBMS procedure call.
 
 .Net has a direct C<Variable> analogy which is provided by any .Net
 I<reference type>, or an object with one property of a reference type.
+
+=head2 Process
+
+A C<Process> value is an opaque and transient reference to a I<process>
+running inside the DBMS environment, which typically has its own autonomous
+transactional context.  Each I<process> might be either self-contained or
+be a proxy for some entity outside the DBMS environment.  A typical .Net
+application would use a distinct C<Process> for each conceptually
+independent distinct instance of a DBMS "connection".
+
+=head2 Stream
+
+A C<Stream> value is an opaque and transient reference to a I<stream>,
+which represents streaming data such as from/to user I/O or the filesystem
+or network services etc.
 
 =head2 External
 
@@ -520,23 +544,17 @@ singleton, so only one such object may exist at a time through which it
 manages resources; other implementers may allow several at once, in which
 case they should be completely independent.
 
-=head2 Muldis.DBP.API.Process
-
-A C<Process> object represents a single in-DBMS I<process>, which typically
-has its own autonomous transactional context.  It is associated with a
-specific C<Machine> object, the one whose C<new_process> method created it.
-A typical .Net application would use a distinct C<Process> object for each
-conceptually independent distinct instance of a DBMS "connection".
-
 =head2 Muldis.DBP.API.Value
 
-A C<Value> object represents a single in-DBMS value or variable.  It is
-associated with a specific C<Machine> object, the one whose C<new_value>
-method created it, and sometimes also with a specific C<Process> object.
-C<Value> objects are the normal way to directly share or move data between
-the DBMS and main .Net environments.  The way to represent an in-DBMS
-variable with a C<Value> object is to use a I<value> whose I<data type> is
-C<Variable>.
+A C<Value> object represents a single in-DBMS value of the C<Any> type,
+meaning both regular constant values as well as mutable C<Handle> values.
+A C<Value> object is associated with a specific C<Machine> object, the one
+whose C<new_value> method created it.  C<Value> objects are the normal way
+to directly share or move data between the DBMS and main .Net environments.
+The way to represent an in-DBMS variable with a C<Value> object is to use
+a I<value> whose I<data type> is C<Variable>.  The way to represent an
+in-DBMS process with a C<Value> object is to use a I<value> whose I<data
+type> is C<Process>.
 
 =head1 DIAGNOSTICS
 
