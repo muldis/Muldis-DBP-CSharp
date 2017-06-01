@@ -211,16 +211,6 @@ provide several fixed-size exact rational types such as C<System.Decimal>.
 
 I<TODO.>
 
-=head2 String
-
-A C<String> value is a general purpose integer string, which explicitly
-does not represent any kind of thing in particular, neither octets nor
-characters nor anything else, simply an arbitrarily-long ordered sequence
-of generic integers, where each integer is represented by an C<Integer>.
-
-.Net has a direct C<String> analogy which is provided by the .Net
-class C<System.Collections.Generic.List> where every element is an integer.
-
 =head2 Bits
 
 A C<Bits> value is an arbitrarily-long sequence of I<bits> where each bit
