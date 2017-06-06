@@ -79,7 +79,7 @@ L<http://www.muldis.com/>
 MDBP is free documentation for software; you can redistribute it and/or
 modify it under the terms of the Artistic License version 2 (AL2) as
 published by the Perl Foundation (L<http://www.perlfoundation.org/>).  You
-should have received copies of the AL2 as part of the MDBP distribution,
+should have received a copy of the AL2 as part of the MDBP distribution,
 in the file named "LICENSE/artistic-2_0.txt"; if not, see
 L<http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt>.
 
