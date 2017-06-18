@@ -19,7 +19,7 @@ corresponding to that pure documentation file.
 
 *This documentation is pending.*
 
-# DEPENDENCIES
+# DEPENDENCIES AND COMPATIBILITY
 
 See Muldis.D.Ref\_Eng ([https://github.com/muldis/Muldis-D-Ref-DotNet](
 https://github.com/muldis/Muldis-D-Ref-DotNet)) which is the initial
