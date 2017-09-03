@@ -228,17 +228,20 @@ octet is represented by an C<Integer> in the range 0..255.
 
 =head2 Text
 
-A C<Text> value is an arbitrarily-long sequence of abstract I<characters>
-where each character is a member of an infinite-size proprietary abstract
-character repertoire named I<maximal>, the latter in turn being formally a
-proper superset of the 0x10F7FF-character repertoire of Unicode, so for all
-practical purposes this is a Unicode character string.  A C<Text> value is
-canonically defined in terms of a sequence of C<Integer> where each of
-those represents a (typically Unicode) abstract character
-I<codepoint>, with each unique integer corresponding to a unique character.
+A C<Text> value is characterized by an arbitrarily-long sequence of Unicode
+10.0 standard I<character codepoints>, where each distinct codepoint
+corresponds to a distinct integer in the set C<{0..0xD7FF,0xE000..0x10FFFF}>.
 
 .Net has a direct C<Text> analogy which is provided by the .Net
 class C<System.String>.
+
+Every C<Text> value corresponds 1:1 with a .Net C<String> value, but a .Net
+C<String> is also capable of being malformed, and contain isolated UTF-16
+"surrogate" Char elements that don't correspond to valid Unicode
+codepoints; such malformed .Net C<String> values are forbidden to be used
+as input to C<Muldis.DBP> and no library implementing C<Muldis.DBP> may
+output such a malformed .Net C<String>.  This ban also applies everywhere
+a .Net C<String> may be used in the API, such as I<attribute names>.
 
 =head2 Array
 
