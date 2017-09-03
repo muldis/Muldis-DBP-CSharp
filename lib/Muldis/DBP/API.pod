@@ -328,12 +328,6 @@ I<TODO.>
 
 I<TODO.>
 
-=head2 Interval
-
-I<TODO.>
-
-.Net doesn't have a native C<Interval> analogy.
-
 =head2 Capsule
 
 I<TODO.>
