@@ -455,6 +455,12 @@ The singleton type value C<Excuse_Zero_To_The_Zero> represents the
 I<undefined> result of attempting to exponentiate a number zero to the
 power of a number zero.
 
+=head2 Excuse_No_Empty_Value
+
+The singleton type value C<Excuse_No_Empty_Value> represents the
+I<undefined> result of attempting to request the value with zero members of
+some collection type that doesn't have a value with zero members.
+
 =head2 Excuse_No_Such_Ord_Pos
 
 The singleton type value C<Excuse_No_Such_Ord_Pos> represents the
