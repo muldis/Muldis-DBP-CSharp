@@ -400,9 +400,9 @@ the latter which is.
 .Net has a direct C<Excuse> analogy which is provided by the .Net class
 C<System.Exception>.
 
-=head2 Excuse_No_Reason
+=head2 No_Reason
 
-The singleton type value C<Excuse_No_Reason> represents the I<excuse> which
+The singleton type value C<No_Reason> represents the I<excuse> which
 simply says that an ordinary value for any given domain is missing and that
 there is simply no excuse that has been given for this; in other words,
 something has gone wrong without the slightest hint of an explanation.
@@ -410,80 +410,80 @@ This is conceptually the most generic I<excuse> value there is and it can
 be used by lazy programmers as a fallback for when they don't have even a
 semblance of a better explanation for why an ordinary value is missing.
 
-.Net has a direct C<Excuse_No_Reason> analogy which is provided by C<null>,
+.Net has a direct C<No_Reason> analogy which is provided by C<null>,
 and another provided by the .Net singleton class C<System.DBNull>.
 
 For a B<MDBP>-implementing library that natively has a concept of
 3-valued logic, specifically a concept like such where the multiplicity of
 scenarios that may produce a special no-regular-value-is-here marker do in
-fact all produce the exact same marker, C<Excuse_No_Reason> is the official
+fact all produce the exact same marker, C<No_Reason> is the official
 way to represent that marker.  This includes the I<null> of any common
 dialect of SQL.  Whereas, for DBMS libraries that distinguish the reasons
-for why a regular value may be missing, C<Excuse_No_Reason> should NOT be
+for why a regular value may be missing, C<No_Reason> should NOT be
 used and instead other more applicable I<excuse> values should instead.
 
-=head2 Excuse_Before_All_Others
+=head2 Before_All_Others
 
-The singleton type value C<Excuse_Before_All_Others> represents a
+The singleton type value C<Before_All_Others> represents a
 type-agnostic analogy of negative infinity, an I<orderable> value that
 sorts I<before> all other values in the type system, and that is its only
 meaning.  This value is expressly I<not> meant to represent any specific
 mathematical or physical concept of I<infinity> or I<∞>, including those of
 the IEEE floating-point standards; such things should be defined separately.
 
-=head2 Excuse_After_All_Others
+=head2 After_All_Others
 
-The singleton type value C<Excuse_After_All_Others> represents a
+The singleton type value C<After_All_Others> represents a
 type-agnostic analogy of positive infinity, an I<orderable> value that
 sorts I<after> all other values in the type system, and that is its only
 meaning.  This value is expressly I<not> meant to represent any specific
 mathematical or physical concept of I<infinity> or I<∞>, including those of
 the IEEE floating-point standards; such things should be defined separately.
 
-=head2 Excuse_Div_By_Zero
+=head2 Div_By_Zero
 
-The singleton type value C<Excuse_Div_By_Zero> represents the I<undefined>
+The singleton type value C<Div_By_Zero> represents the I<undefined>
 result of attempting to divide a simple number by a simple, unsigned,
 number zero.
 
-.Net has a direct C<Excuse_Div_By_Zero> analogy which is provided by
+.Net has a direct C<Div_By_Zero> analogy which is provided by
 the .Net class C<System.DivideByZeroException>.
 
-=head2 Excuse_Zero_To_The_Zero
+=head2 Zero_To_The_Zero
 
-The singleton type value C<Excuse_Zero_To_The_Zero> represents the
+The singleton type value C<Zero_To_The_Zero> represents the
 I<undefined> result of attempting to exponentiate a number zero to the
 power of a number zero.
 
-=head2 Excuse_No_Empty_Value
+=head2 No_Empty_Value
 
-The singleton type value C<Excuse_No_Empty_Value> represents the
+The singleton type value C<No_Empty_Value> represents the
 I<undefined> result of attempting to request the value with zero members of
 some collection type that doesn't have a value with zero members.
 
-=head2 Excuse_No_Such_Ord_Pos
+=head2 No_Such_Ord_Pos
 
-The singleton type value C<Excuse_No_Such_Ord_Pos> represents the
+The singleton type value C<No_Such_Ord_Pos> represents the
 I<undefined> result of attempting to use a member ordinal position I<P> of
 C<Array>/etc value I<V> while assuming incorrectly that I<V> already has a
 member whose ordinal position is I<P>.
 
-.Net has a direct C<Excuse_No_Such_Ord_Pos> analogy which is provided by
+.Net has a direct C<No_Such_Ord_Pos> analogy which is provided by
 the .Net class C<System.IndexOutOfRangeException>.
 
-=head2 Excuse_No_Such_Attr_Name
+=head2 No_Such_Attr_Name
 
-The singleton type value C<Excuse_No_Such_Attr_Name> represents the
+The singleton type value C<No_Such_Attr_Name> represents the
 I<undefined> result of attempting to use an attribute named I<N> of
 C<Tuple>/etc value I<V> while assuming incorrectly that I<V> already has an
 attribute whose name is I<N>.
 
-.Net has a direct C<Excuse_No_Such_Attr_Name> analogy which is provided by
+.Net has a direct C<No_Such_Attr_Name> analogy which is provided by
 the .Net class C<System.Collections.Generic.KeyNotFoundException>.
 
-=head2 Excuse_Not_Same_Heading
+=head2 Not_Same_Heading
 
-The singleton type value C<Excuse_Not_Same_Heading> represents the
+The singleton type value C<Not_Same_Heading> represents the
 I<undefined> result of attempting to perform an operation that takes 2
 C<Tuple>/etc inputs and requires them to have the same relational
 I<heading> but the actual 2 inputs have different headings.
